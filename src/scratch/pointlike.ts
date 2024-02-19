@@ -29,3 +29,4 @@ logPoint(obj);
 logName(obj);
 // Typescript's type system is structural
 // and also not reified (no types present at runtime)
+logName({ name: "n" });
