@@ -1,4 +1,4 @@
-import fs, { PathLike } from "fs";
+import fs, { PathLike } from 'fs';
 
 // work out the current working directory
 const cwd = process.cwd();
@@ -11,3 +11,9 @@ fs.readFile(filePath, (err: NodeJS.ErrnoException | null, data: Buffer) => {
   }
   console.log(data.toString());
 });
+
+const foo = () => {
+  console.log(
+    `just to trigger a change in the file and see if the watcher picks it up!`
+  );
+};
