@@ -17,3 +17,7 @@ const foo = () => {
     `just to trigger a change in the file and see if the watcher picks it up!`
   );
 };
+
+const bar = () => {
+  console.log(`just to trigger a change to see if GH workflows will kick in!`);
+};
